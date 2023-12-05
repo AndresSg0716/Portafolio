@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ContenedorCarrusel{
+    background-color: firebrick;
+    border: 5px, solid, black;
+    height: 200px;
+}
+
+.itemCar-1{
+    background-color: lightcyan;
+    position: relative;
+    height: 100%;
+}
+
+.ContenidoCar{
+    background-color: blue;
+}
+
+.flechasCar{
+    background-color:wheat;
+}
