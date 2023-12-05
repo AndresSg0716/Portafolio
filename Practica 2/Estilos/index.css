@@ -1,0 +1,57 @@
+body, h1, h2, h3, p, table {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #DC0000; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table a {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #DC0000; 
+    font-weight: bold;
+    border: 2px solid #DC0000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+table a:hover {
+    background-color: #DC0000; 
+    color: white;
+}
+
+
+#descripcion {
+    padding: 20px;
+    background-color: #F1F1F1;
+}
+
+#MAS h2 {
+    color: #DC0000; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+h2{
+    padding: 20px;
+}
