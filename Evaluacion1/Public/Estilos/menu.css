@@ -1,0 +1,95 @@
+body, h1, h2, h3, p, figure, table, td, a {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #363636; 
+    padding: 10px 20px;
+}
+
+header figure img {
+    width: 40px;
+    height: auto;
+}
+
+header h1 {
+    text-align: right;
+    color: #FFFF00;
+}
+
+section#menu {
+    text-align: center;
+    margin: 20px;
+}
+
+section#menu h2 {
+    color: #363636;
+}
+
+section#menu p {
+    margin: 20px;
+    text-align: center;
+}
+
+div.comida {
+    margin: 20px auto;
+    text-align: center;
+}
+
+div.comida img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+div.bebidas {
+    margin: 20px auto; 
+    text-align: center;
+}
+
+div.bebidas img {
+    width: 150px; 
+    height: auto;
+    margin: 10px;
+}
+
+section#Navegacion table {
+    width: 80%;
+    text-align: center;
+    margin: 10px auto; 
+    background-color: #363636;
+}
+
+section#Navegacion table a {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #FFFF00;
+    font-weight: bold;
+    border: 2px solid #FFFF00;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section#Navegacion table a:hover {
+    background-color: #FFFF00;
+    color: #363636;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #363636;
+    color: white;
+}
+
+table{
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+}
