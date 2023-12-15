@@ -1,0 +1,68 @@
+body, h1, h2, p, table, td, a {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #DC0000;
+}
+
+#Productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+table {
+    text-align: center;
+    margin: 20px;
+    border-collapse: collapse;
+    width: 200px; 
+}
+
+.Imagen img {
+    width: 100%;
+    height: auto;
+}
+
+td.comprar {
+    background-color: #DC0000; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+td.comprar:hover {
+    background-color: #990000;
+}
+
+h2.Proximamente {
+    text-align: center;
+}
+
+table.Nostros {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table.Nostros a {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #DC0000; 
+    font-weight: bold;
+    border: 2px solid #DC0000; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+table.Nostros a:hover {
+    background-color: #DC0000;
+    color: white;
+}

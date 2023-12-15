@@ -1,0 +1,76 @@
+body, h1, h2, h3, p, table, td, a {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #DC0000;
+}
+
+h3 {
+    text-align: center;
+    color: #DC0000; 
+}
+
+#productos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+table {
+    text-align: center;
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+.Imagen img {
+    width: 80%;
+    height: auto;
+}
+
+h2.Total {
+    text-align: center;
+    margin-top: 20px;
+    color: #DC0000; 
+}
+
+h2.Confirmar {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: #DC0000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2.Confirmar:hover {
+    transform: scale(1.1); 
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table a {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #DC0000;
+    font-weight: bold;
+    border: 2px solid #DC0000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+table a:hover {
+    background-color: #DC0000;
+    color: white;
+}
