@@ -1,80 +1,117 @@
-body, h1, h2, h3, p, figure, table, td, a, ul, li {
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #363636; 
-    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+header figure {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 header figure img {
-    width: 40px;
-    height: auto;
+    width: 80px;
+    height: 80px;
 }
 
 header h1 {
-    text-align: right;
-    color: #FFFF00;
+    font-family: 'Kaushan Script', cursive;
+    margin: 0;
+    color: #ffc107;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 15px;
+    border: 3px solid #ffc107;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #333;
+    background-color: #ffc107;
 }
 
 section#redes {
+    padding: 20px;
     text-align: center;
-    margin: 20px;
+    background-color: #f8f9fa;
 }
 
 section#redes h2 {
-    color: #363636;
+    color: #333;
 }
 
-ul.contactos_publicos, ul.contactos_privados {
-    list-style: none;
+section#redes div {
     display: flex;
     justify-content: space-around;
-    margin: 20px auto;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-ul.contactos_publicos li, ul.contactos_privados li {
-    text-align: center;
+ul.contactos_publicos,
+ul.contactos_privados {
+    list-style: none;
+    padding: 0;
 }
 
-ul.contactos_publicos img, ul.contactos_privados img {
-    width: 50px; 
-    height: auto;
+ul.contactos_publicos li,
+ul.contactos_privados li {
     margin: 10px;
+    color: #333;
 }
 
-section#Navegacion table {
-    width: 80%;
-    text-align: center;
-    margin: 10px auto;
-    background-color: #363636; 
-}
-
-section#Navegacion table a {
-    display: block;
-    padding: 10px 20px;
-    margin: 10px;
-    text-decoration: none;
-    color: #FFFF00; 
-    font-weight: bold;
-    border: 2px solid #FFFF00; 
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-section#Navegacion table a:hover {
-    background-color: #FFFF00;
-    color: #363636;
+ul.contactos_publicos li img,
+ul.contactos_privados li img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
 }
 
 footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    background-color: #363636;
-    color: white;
-    margin: 0;
+    padding: 1em 0;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer h5 {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
+
+footer p {
+    max-width: 400px;
+    text-align: justify;
 }

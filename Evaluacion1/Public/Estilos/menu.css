@@ -1,95 +1,122 @@
-body, h1, h2, h3, p, figure, table, td, a {
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #363636; 
-    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+header figure {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 header figure img {
-    width: 40px;
-    height: auto;
+    width: 80px;
+    height: 80px;
 }
 
 header h1 {
-    text-align: right;
-    color: #FFFF00;
+    font-family: 'Kaushan Script', cursive;
+    margin: 0;
+    color: #ffc107;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 15px;
+    border: 3px solid #ffc107;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+header nav a:hover {
+    color: #333; 
+    background-color: #ffc107;
 }
 
 section#menu {
+    padding: 20px;
     text-align: center;
-    margin: 20px;
+    background-color: #f8f9fa;
 }
 
 section#menu h2 {
-    color: #363636;
+    color: #333; 
 }
 
 section#menu p {
-    margin: 20px;
-    text-align: center;
+    color: #555;
 }
 
-div.comida {
-    margin: 20px auto;
-    text-align: center;
-}
-
-div.comida img {
-    width: 150px;
-    height: auto;
-    margin: 10px;
-}
-
+div.comida,
 div.bebidas {
-    margin: 20px auto; 
+    margin-top: 20px;
+}
+
+div.comida h2,
+div.bebidas h2 {
+    color: #333; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table img {
+    width: 400px;
+    height: 400px;
+}
+
+table td {
+    padding: 10px;
     text-align: center;
-}
-
-div.bebidas img {
-    width: 150px; 
-    height: auto;
-    margin: 10px;
-}
-
-section#Navegacion table {
-    width: 80%;
-    text-align: center;
-    margin: 10px auto; 
-    background-color: #363636;
-}
-
-section#Navegacion table a {
-    display: block;
-    padding: 10px 20px;
-    margin: 10px;
-    text-decoration: none;
-    color: #FFFF00;
-    font-weight: bold;
-    border: 2px solid #FFFF00;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-section#Navegacion table a:hover {
-    background-color: #FFFF00;
-    color: #363636;
+    border: 1px solid #ddd;
 }
 
 footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    background-color: #363636;
-    color: white;
+    padding: 1em 0;
 }
 
-table{
-    width: 80%;
-    text-align: center;
-    margin: 10px auto;
+footer div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer h5 {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffc107; 
+}
+
+footer p {
+    max-width: 400px;
+    text-align: justify;
 }
