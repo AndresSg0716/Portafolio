@@ -80,3 +80,8 @@ nav a:hover{
 .productos a{
     text-decoration: none;
 }
+
+.productos a:hover{
+    color: black;
+transition: 0.3s;
+}
