@@ -102,7 +102,6 @@ operaciones.forEach( boton => {
             }
             if (pantalla.childNodes[0].nodeValue.includes('/')){
                 resultado('+',dividirNumeros())
-                
             }
         }
     });
