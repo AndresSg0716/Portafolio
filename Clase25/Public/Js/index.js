@@ -59,15 +59,20 @@ function multiplicarNumeros() {
 function dividirNumeros() {
     let numeros = pantalla.childNodes[0].nodeValue.split('/');
     let resultado = parseFloat(numeros[0]);
+    let divisor = parseFloat(numeros[1])
+    if (divisor === 0) {
+        borrarNumero();
+        return "Error: MATH"
+    } else {
+    numeros.shift();
     numeros.forEach( numero => {
         resultado /= parseFloat(numero);
     });
     borrarNumero();
     console.log(numeros)
     return resultado;
-    
 }
-
+}
 function resultado(operador,operacion){
     if (operador == '+'){
         agregarNumero(operacion);
@@ -102,6 +107,7 @@ operaciones.forEach( boton => {
             }
             if (pantalla.childNodes[0].nodeValue.includes('/')){
                 resultado('+',dividirNumeros())
+
             }
         }
     });
