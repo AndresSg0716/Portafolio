@@ -11,7 +11,6 @@ const operaciones = document.querySelectorAll('.operaciones');
 
 const numeros = document.querySelectorAll('.numeros');
 
-// FUNCIONES DE LA PANTALLA
 function agregarNumero(numero) {
     pantalla.childNodes[0].nodeValue += numero;
 }
@@ -19,8 +18,6 @@ function agregarNumero(numero) {
 function borrarNumero() {
     pantalla.childNodes[0].nodeValue = '';
 }
-
-// FUNCIONES DE LAS OPERACIONES
 
 function sumarNumeros(){
     let numeros = pantalla.childNodes[0].nodeValue.split('+');
