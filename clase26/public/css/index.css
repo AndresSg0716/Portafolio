@@ -1,0 +1,178 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+h1{
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 1100px;
+    color: goldenrod;
+}
+.container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+
+::placeholder{
+    color: goldenrod;
+}
+
+/* Estilos para botón de eliminar */
+.btn-eliminar {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-eliminar:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilos para botón de editar */
+.btn-editar {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-editar:hover {
+    background-color: #388e3c;
+}
+
+
+form.aggUsuario {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin-top: 30px;
+    width: 300px;
+    height: 400px;
+    margin-right: 180px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    color: goldenrod;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form.aggUsuario input[type="text"],
+form.aggUsuario input[type="email"],
+form.aggUsuario input[type="password"],
+form.aggUsuario input[type="url"],
+form.aggUsuario input[type="submit"] {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    color: goldenrod;
+    background-color: black;
+ 
+}
+
+form.aggUsuario input[type="submit"] {
+    background-color: goldenrod;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form.aggUsuario input[type="submit"]:hover {
+    background-color: rgb(241, 178, 16);
+    transform: scale(1.05);
+}
+
+section.usuarios {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 20px;
+    color: goldenrod;
+}
+
+.usuario {
+    background-color: #f5f5f5;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    padding: 15px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: goldenrod;
+}
+
+.usuario:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.usuario img {
+    border-radius: 50%;
+    margin-bottom: 10px; /* Margen inferior reducido */
+    width: 80px; /* Tamaño de la imagen reducido */
+    height: 80px; /* Tamaño de la imagen reducido */
+    object-fit: cover;
+    border: 2px solid #007bff;
+}
+
+.usuario .info {
+    color: goldenrod;
+    text-align: center;
+}
+
+.usuario .info h5 {
+    margin: 0;
+    font-size: 16px; /* Tamaño del título reducido */
+    color: goldenrod;
+}
+
+.usuario .info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+    color: goldenrod;
+}
