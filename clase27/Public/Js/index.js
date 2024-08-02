@@ -19,8 +19,8 @@ async function fetchData(){
     return data
 }
 
-btnSearch.addEventListener("click", async () => {
-    const data = await fetchData()
-    const tarjeta = data.map((element) => tarjetaData(element)).join("")
-    todo.innerHTML = tarjeta
-})
+    btnSearch.addEventListener("click", async () => {
+        const data = await fetchData()
+        const tarjeta = data.map((element) => tarjetaData(element)).join("")
+        todo.innerHTML = tarjeta
+    })
